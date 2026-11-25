@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Khepuu ❤️ | Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background-hearts" id="backgroundHearts"></div>
+
+    <!-- MUSIC -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="Song2.0.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button class="music-button" id="musicButton" type="button">
+        ♫ Music Off
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- STEP 1 : WELCOME            -->
+    <!-- ============================= -->
+
+    <section class="step active" id="step1">
+
+        <div class="card welcome-card">
+
+            <div class="decorative-heart">♡</div>
+
+            <p class="small-heading">A little something for you</p>
+
+            <h1>
+                A Little World<br>
+                <span>Made For You</span>
+            </h1>
+
+            <div class="divider">
+                <span>✦</span>
+            </div>
+
+            <p class="date">26 November 2026</p>
+
+            <p class="welcome-text">
+                Some days deserve to be celebrated.<br>
+                And some people deserve something<br>
+                a little more special.
+            </p>
+
+            <button class="primary-button" type="button" onclick="nextStep(2)">
+                Let's Begin the Surprise
+                <span>♡</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 2 : BIRTHDAY WISH      -->
+    <!-- ============================= -->
+
+    <section class="step" id="step2">
+
+        <div class="card">
+
+            <p class="small-heading">Today is all about you</p>
+
+            <h1>
+                Happy Birthday
+                <span class="script-name">Khepuu ♡</span>
+            </h1>
+
+            <div class="birthday-icon">🎂</div>
+
+            <p class="birthday-text">
+                May your life always be filled with happiness,
+                beautiful moments, peaceful days and countless
+                reasons to smile.
+            </p>
+
+            <p class="birthday-text">
+                May all the little dreams hidden in your heart
+                slowly turn into something beautiful.
+            </p>
+
+            <p class="birthday-highlight">
+                You deserve all the happiness in this world. ❤️
+            </p>
+
+            <button class="primary-button" type="button" onclick="nextStep(3)">
+                Continue
+                <span>♡</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 3 : CAKE               -->
+    <!-- ============================= -->
+
+    <section class="step" id="step3">
+
+        <div class="card cake-card">
+
+            <p class="small-heading">Make a little wish</p>
+
+            <h1>Your Birthday Cake 🎂</h1>
+
+            <p class="cake-instruction">
+                Close your eyes, make a wish,<br>
+                and blow the candles.
+            </p>
+
+            <div class="cake-container">
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame" id="flame1"></div>
+                        <div class="candle-body"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame" id="flame2"></div>
+                        <div class="candle-body"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame" id="flame3"></div>
+                        <div class="candle-body"></div>
+                    </div>
+
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-layer layer-one"></div>
+                <div class="cake-layer layer-two"></div>
+                <div class="cake-base"></div>
+
+            </div>
+
+            <button class="primary-button" id="blowButton" type="button" onclick="blowCandles()">
+                Blow the Candles 🕯️
+            </button>
+
+            <p id="cakeMessage" class="cake-message"></p>
+
+            <button class="primary-button hidden" id="cakeNextButton" type="button"
+                    onclick="nextStep(4)">
+                Continue ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 4 : BIRTHDAY MESSAGE   -->
+    <!-- ============================= -->
+
+    <section class="step" id="step4">
+
+        <div class="card">
+
+            <p class="small-heading">A little message from my heart</p>
+
+            <h1>For Someone Special 💌</h1>
+
+            <div class="message-box">
+
+                <p>
+                    Some people make ordinary days feel a little
+                    more beautiful just by being themselves.
+                </p>
+
+                <p>
+                    Your smile, your little moments of happiness,
+                    and the way you carry yourself make you
+                    someone truly special.
+                </p>
+
+                <p>
+                    I hope this new chapter of your life brings
+                    you endless happiness, beautiful memories,
+                    success and everything you've ever wished for.
+                </p>
+
+                <p class="message-highlight">
+                    Keep smiling, keep shining,
+                    and never stop being you. ❤️
+                </p>
+
+            </div>
+
+            <button class="primary-button" type="button" onclick="nextStep(5)">
+                A Little Memory Awaits →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 5 : PHOTO ONE          -->
+    <!-- ============================= -->
+
+    <section class="step photo-step" id="step5">
+
+        <div class="card photo-card">
+
+            <p class="small-heading">Memory 01</p>
+
+            <h1>♡</h1>
+
+            <div class="photo-frame">
+                <img src="photo1.jpeg" alt="Memory 1">
+            </div>
+
+            <button class="primary-button" type="button" onclick="nextStep(6)">
+                Next Memory →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 6 : PHOTO TWO          -->
+    <!-- ============================= -->
+
+    <section class="step photo-step" id="step6">
+
+        <div class="card photo-card">
+
+            <p class="small-heading">Memory 02</p>
+
+            <h1>♡</h1>
+
+            <div class="photo-frame">
+                <img src="photo2.jpeg" alt="Memory 2">
+            </div>
+
+            <button class="primary-button" type="button" onclick="nextStep(7)">
+                One More Memory →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 7 : PHOTO THREE        -->
+    <!-- ============================= -->
+
+    <section class="step photo-step" id="step7">
+
+        <div class="card photo-card">
+
+            <p class="small-heading">Memory 03</p>
+
+            <h1>♡</h1>
+
+            <div class="photo-frame">
+                <img src="photo3.jpeg" alt="Memory 3">
+            </div>
+
+            <button class="primary-button" type="button" onclick="nextStep(8)">
+                Continue ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 8 : LETTER             -->
+    <!-- ============================= -->
+
+    <section class="step" id="step8">
+
+        <div class="card letter-card">
+
+            <p class="small-heading">Something I wanted to say</p>
+
+            <h1>A Letter For You 💌</h1>
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-icon">💌</div>
+
+                <p>A little letter awaits you...</p>
+
+                <button class="primary-button" type="button" onclick="openLetter()">
+                    Open Your Letter
+                </button>
+
+            </div>
+
+            <div class="letter-content hidden" id="letterContent">
+
+                <div class="letter-paper">
+
+                    <h2>Dear Khepuu,</h2>
+
+                    <p id="typedLetter"></p>
+
+                    <p class="letter-signature">
+                        With lots of love ♡
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="primary-button hidden" id="letterNextButton" type="button"
+                    onclick="nextStep(9)">
+                One Last Surprise ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STEP 9 : FINAL SURPRISE     -->
+    <!-- ============================= -->
+
+    <section class="step" id="step9">
+
+        <div class="card final-card">
+
+            <div class="final-heart">❤️</div>
+
+            <p class="small-heading">And before this little journey ends...</p>
+
+            <h1>
+                Happy Birthday,<br>
+                <span class="script-name">Khepuu ♡</span>
+            </h1>
+
+            <div class="divider">
+                <span>✦</span>
+            </div>
+
+            <p class="final-message">
+                I hope whenever you look back at this day,
+                you remember that someone wanted to make
+                your birthday a little more beautiful.
+            </p>
+
+            <p class="final-highlight">
+                Stay happy.<br>
+                Stay beautiful.<br>
+                Keep smiling always. 🌷
+            </p>
+
+            <div class="final-decoration">
+                ♡ &nbsp; ∞ &nbsp; ♡
+            </div>
+
+            <p class="final-small">
+                Made with love, just for you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFETTI CONTAINER -->
+    <div id="confettiContainer"></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
